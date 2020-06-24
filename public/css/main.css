@@ -1,0 +1,257 @@
+.container{
+    background-color: rgb(187, 196, 196);
+}
+
+#centeredTitle{
+    text-align: center;
+    color:rgb(105, 105, 228);
+}
+
+.register{
+    display: inline;
+    color: rgb(26, 26, 190);
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 20px;
+    background-color: rgb(203, 229, 236);
+    border-radius: 15px;
+    border-style: double;
+}
+#shopOnline{
+    margin-right: 60%;
+}
+
+.register:hover{
+    transition-duration: 2s;
+    cursor: pointer;
+    background-color: rgb(26, 26, 190);
+    color: rgb(203, 229, 236);
+}
+
+.bar{
+    border-radius: 10px;
+    border-color: rgb(33, 34, 58);
+    border-style: groove;
+    text-align: right;
+    background-color: rgb(188, 197, 221);
+    height: 20%;
+    padding: 10px;
+}
+
+#bodyContainer{
+    border-style: groove;
+    border-radius: 5px;
+    border-width: 10px;
+    padding: 15px;
+    display: table;
+    width: 97%;
+}
+
+#productContainer{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    padding: 15px;
+    margin: 5px;
+    width: 178px;
+    float: left;
+    height: 400px;
+}
+
+.imagPreview{
+    width: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+}
+
+#price{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(35, 102, 102);
+    text-align: center  ;
+}
+
+#addToChart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productCount{
+    width: 30px;
+    margin-left: 35%;
+}
+
+.footerHead{
+    color: rgb(26, 26, 190);
+    text-align: left;
+    margin: 5px;
+}
+
+.footerUL{
+    font-size: 20px;
+    text-align: left;
+}
+
+.footerContainer{
+    float: left;
+    margin-left: 30px;
+}
+
+#footerBar{
+    display: table;
+    width: 100%;
+}
+
+.footerLI{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.addProduct{
+    border-radius: 3px;
+    border-style: ridge;
+    border-color: darkturquoise;
+    border-width: 5px;
+    margin-left: 17%;
+    margin-bottom: 10%;
+    display: table;
+    width: 60%;
+    height: 200px;
+}
+
+.productItems{
+    font-weight: bolder;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.addProductBTN{
+    display: inline;
+    color: rgb(26, 26, 190);
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 20px;
+    background-color: rgb(203, 229, 236);
+    border-radius: 15px;
+}
+
+.addProductBTN:hover{
+    transition-duration: 2s;
+    cursor: pointer;
+    background-color: rgb(26, 26, 190);
+    color: rgb(203, 229, 236);
+}
+
+.active{
+    background-color: rgb(238, 152, 136);
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    margin-left: 35%;
+    font-size: 25px;
+    font-weight: bold; 
+}
+
+.disactive{
+    display: none;
+}
+
+.editProduct{
+    border-radius: 3px;
+    border-style: ridge;
+    border-color: darkturquoise;
+    border-width: 5px;
+    margin-left: 17%;
+    margin-bottom: 10%;
+    display: table;
+    width: 60%;
+    height: 200px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#paginationLink{
+    color: rgb(26, 26, 190);
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 10px;
+    background-color: rgb(203, 229, 236);
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#paginationLink:hover{
+    transition-duration: 2s;
+    cursor: pointer;
+    background-color: rgb(26, 26, 190);
+    color: rgb(203, 229, 236);   
+}
+
+.signUp{
+    border-radius: 3px;
+    border-style: ridge;
+    border-color: darkturquoise;
+    border-width: 5px;
+    margin-left: 17%;
+    margin-bottom: 10%;
+    display: table;
+    width: 60%;
+    height: 200px;
+}
+
+.signUpBTN{
+    display: inline;
+    color: rgb(26, 26, 190);
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 5% 5% 5% 30%;
+    background-color: rgb(203, 229, 236);
+    border-radius: 15px;
+}
+
+.signUpBTN:hover{
+    transition-duration: 2s;
+    cursor: pointer;
+    background-color: rgb(26, 26, 190);
+    color: rgb(203, 229, 236);
+}
+
+.signUpItems{
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.gender{
+    margin-left: 7%;
+}
+
+.errorMessage{
+    border-color: rgb(179, 4, 4);
+    border-radius: 2%;
+    border-style: double;
+    background-color: rgb(193, 189, 231);
+    color: rgb(62, 31, 236);
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    margin-left: 30%;
+}
+
+.emptyCartItem{
+    text-align: center;
+    color: rgb(204, 95, 95);
+    font-size: 50px;
+}

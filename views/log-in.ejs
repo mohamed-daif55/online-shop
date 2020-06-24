@@ -1,0 +1,25 @@
+<%- include("includes/header.ejs") %>
+
+    <div class="signUp">
+
+        <% if( errorMessage ) { %>
+
+            <p class="errorMessage" ><%= errorMessage %></p>
+
+        <% } %>
+        
+        <form action="/log-in" method="POST">
+
+            <label class="signUpItems">Email : </label>
+            <input type="text" name="email" class="signUpItems"><br>
+
+            <label class="signUpItems">Password : </label>
+            <input type="password" name="password" class="signUpItems"><br>
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+            <button type="submit" class="signUpBTN">Login</button>
+
+        </form>
+
+    </div>
+
+<%- include("includes/footer.ejs")%>

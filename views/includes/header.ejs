@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title><%= pageTitle %></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="/css/main.css"/>
+</head>
+<body>
+
+    <div class="container">
+        <div id="accountBar" class="bar">
+            <a id="shopOnline" class="register" href="/">Shop Online</a>
+            <% if(!isAuthenticated) { %>
+                <a id="login" class="register" href="/log-in">Log in</a>
+                <a id="signup" class="register" href="/sign-up">Sign up</a>
+            <% }else{ %>
+                <form method="POST" action="/logout">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <button class="register" type="submit">logout</button>
+                </form>
+            <% } %>
+        </div>
+
+        <h1 id="centeredTitle">Shop Online</h1>

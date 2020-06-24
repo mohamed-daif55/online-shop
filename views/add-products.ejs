@@ -1,0 +1,29 @@
+   
+    <%- include("includes/header.ejs") %>
+
+    <div class="addProduct">
+
+        <form action="/add-products?_csrf=<%=csrfToken%>" method="POST" id="addProductForm" enctype="multipart/form-data">
+           
+            <label class="productItems">Price</label>
+            <input type="number" name="price" class="productItems" id="addPrice" step="0.01"> <br>
+
+            <label class="productItems">Choose Image</label>
+            <input type="file" name="image" class="productItems" id="addImage"> <br>
+
+            <label class="productItems">Category</label>
+            <select name="category" class="productItems" id="addCategory">
+                <option value="Watches">Watches</option>
+                <option value="Wallets">Wallets</option>
+                <option value="Back Bags">Back Bags</option>
+            </select> <br>
+            <button type="submit" class="addProductBTN" id="addProductBTN">Add Product</button>
+
+        </form>
+
+    </div>
+   
+    <%- include("includes/footer.ejs") %>
+
+</body>
+</html>

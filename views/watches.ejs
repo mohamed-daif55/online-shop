@@ -1,0 +1,28 @@
+
+    <%- include("includes/header.ejs") %>
+
+    <div id="bodyContainer">
+        
+        <% for( let prods of products) { %>
+
+            <div id="productContainer">
+                <img src="/<%= prods.image %>" class="imagPreview">
+                <p id="price">Price : $<%= prods.price %></p>
+                <% if(isAuthenticated){ %>
+                    <form action="/cart-items/<%= prods._id %>" method="POST">
+                        <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                        <input type="number" class="productCount" value="1" name="count">
+                        <button id="addToChart" class="register" type="submit">Add to chart</button>
+                    </form>
+                <% } %>
+            </div>
+        
+        <% } %>
+
+    </div>
+
+    
+    <%- include("includes/footer.ejs") %>
+
+</body>
+</html>

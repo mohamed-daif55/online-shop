@@ -1,0 +1,42 @@
+    <div id="footerBar" class="bar">
+            
+        <div class="footerContainer">
+        
+            <h2 class="footerHead">Categories</h2>
+            <ul class="footerUL">
+                <li class="footerLI"><a href="/watches">Watches</a></li>
+                <li class="footerLI"><a href="/wallets">Wallets</a></li>
+                <li class="footerLI"><a href="/back-bags">Back Bags</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footerContainer">
+
+            <% if(isAuthenticated){ %>
+
+                <h2 class="footerHead">My account</h2>
+                <ul class="footerUL">
+                    <li class="footerLI"><a href="/cart-items">My shopping cart</a></li>
+                    <li class="footerLI"><a href="/account-settings">Account setting</a></li>
+                </ul>
+
+            <% } %>
+
+        </div>
+
+        <div class="footerContainer">
+
+            <% if(isAdmin){ %>
+                    
+                <h2 class="footerHead">Products</h2>
+                <ul class="footerUL">
+                    <li class="footerLI"><a href="/add-products">Add Product</a></li>
+                </ul>
+
+            <% } %>
+
+        </div>
+
+    </div>
+</div>

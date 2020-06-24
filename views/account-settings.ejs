@@ -1,0 +1,46 @@
+
+    <%- include("includes/header.ejs") %>
+    
+    <div class="signUp">
+
+        <% if( errorMessage ) { %>
+
+            <p class="errorMessage" ><%= errorMessage %></p>
+
+        <% } %>
+
+        <form action="/account-settings" method="POST">
+            
+            <label class="signUpItems">First Name : </label>
+            <input type="text" name="firstname" class="signUpItems" id="firstName" value="<%= firstname %>"> <br>
+
+            <label class="signUpItems">Last Name : </label>
+            <input type="text" name="lastname" class="signUpItems" id="lastName" value="<%= lastname %>"> <br>
+
+            <label class="signUpItems">Password : </label>
+            <input type="password" name="password" class="signUpItems" id="Password"> <br>
+
+            <label class="signUpItems">Confirm Password : </label>
+            <input type="password" name="confirmpassword" class="signUpItems" id="confirmPassword"> <br>
+
+            <p class="signUpItems">Please select your gender:</p>
+            <input type="radio" id="male" name="gender" value="male" class="gender">
+            <label for="male" class="signUpItems">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" class="gender">
+            <label for="female" class="signUpItems">Female</label><br><br>
+
+            <label for="birthday" class="signUpItems">Birthday:</label>
+            <input type="date" id="birthday" name="birthdate" class="signUpItems" value="<%= birthdate %>"><br>
+
+            <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+            <button type="submit" class="signUpBTN" id="signUpBTN">Update</button>
+
+        </form>
+
+    </div>
+
+    <%- include("includes/footer.ejs") %>
+
+</body>
+</html>

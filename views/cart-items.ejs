@@ -1,0 +1,30 @@
+
+    <%- include("includes/header.ejs") %>
+
+    <div id="bodyContainer">
+        
+        <% products.forEach( (product) => { %>
+            
+            <div id="productContainer">
+                <img src="/<%= product.productData.image %>" class="imagPreview">
+                <p id="price">Price : $<%= product.productData.price %></p>
+                <p>Count : <%= product.count %></p>
+                <form action="/deleteCartItem/<%=product.productData._id%>" method="POST">
+                    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+                    <button type="submit" class="register">delete</button>
+                </form>
+            </div>
+        
+        <% }) %>
+
+        <% if(visible){ %>
+            <p class="emptyCartItem">No Items In The Cart</p>
+        <% } %>
+
+    </div>
+
+    
+    <%- include("includes/footer.ejs") %>
+
+</body>
+</html>
